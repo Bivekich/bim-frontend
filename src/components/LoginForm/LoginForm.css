@@ -1,0 +1,52 @@
+.login-form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.login-form-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.login-form-container label {
+    font-size: 16px;
+    color: #000;
+}
+
+.login-form-container input[type="email"],
+.login-form-container input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.login-form-container input[type="email"]:focus,
+.login-form-container input[type="password"]:focus {
+    outline: none;
+    border-color: #666;
+}
+
+.login-form-container button {
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-form-container button:hover {
+    background-color: #333;
+}

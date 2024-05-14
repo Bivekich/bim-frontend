@@ -1,0 +1,54 @@
+.EventsContent {
+    padding: 20px;
+}
+
+.EventsContent h2 {
+    margin-bottom: 10px;
+    color: #000; /* Черный цвет текста */
+}
+
+.EventsList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.EventsList li {
+    margin-bottom: 10px;
+}
+
+.EventsList li button {
+    padding: 8px 16px;
+    background-color: #000; /* Черный цвет фона */
+    color: #fff; /* Белый цвет текста */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.EventsList li button:hover {
+    background-color: #333; /* Цвет фона при наведении */
+}
+
+.ParticipantsButtons {
+    margin-top: 20px;
+}
+
+.ParticipantsButtons button {
+    margin-right: 10px;
+    padding: 8px 16px;
+    background-color: #000; /* Черный цвет фона */
+    color: #fff; /* Белый цвет текста */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ParticipantsButtons button:last-child {
+    margin-right: 0;
+}
+
+.ParticipantsButtons button:hover {
+    background-color: #333; /* Цвет фона при наведении */
+}

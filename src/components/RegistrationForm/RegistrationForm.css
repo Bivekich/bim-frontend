@@ -1,0 +1,49 @@
+.registration-form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.registration-form-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.registration-form-container label {
+    font-size: 16px;
+    color: #000;
+}
+
+.registration-form-container input[type="email"],
+.registration-form-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.registration-form-container input[type="email"]:focus,
+.registration-form-container input[type="password"]:focus {
+    outline: none;
+    border-color: #666;
+}
+
+.registration-form-container button {
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.registration-form-container button:hover {
+    background-color: #333;
+}
