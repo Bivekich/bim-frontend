@@ -1,0 +1,48 @@
+.booking-content {
+    font-family: Arial, sans-serif;
+}
+
+.booking-content h2 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.booking-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.booking-content li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+.booking-content input[type="text"],
+.booking-content input[type="date"],
+.booking-content input[type="time"],
+.booking-content button {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.booking-content input[type="text"]:focus,
+.booking-content input[type="date"]:focus,
+.booking-content input[type="time"]:focus,
+.booking-content button:focus {
+    outline: none;
+}
+
+.booking-content button:hover {
+    background-color: #000;
+    color: #fff;
+}

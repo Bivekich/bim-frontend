@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './UserPanel.css';
 import EventsContent from "../EventsContent/EventsContent.jsx";
 import ChatContent from "../ChatContent/ChatContent.jsx";
+import BookingContent from "../BookingContent/BookingContent.jsx";
 
 function UserPanel({onLogout}) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);

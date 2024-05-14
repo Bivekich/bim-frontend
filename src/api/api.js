@@ -100,3 +100,48 @@ export const getEventParticipants = async (eventId) => {
         throw error.response.data.message;
     }
 };
+
+export const getCoworkingSpaces = async () => {
+    try {
+        const response = await axios.get(`${BASE_URL}/coworking`);
+        return response.data;
+    } catch (error) {
+        throw error.response.data;
+    }
+};
+
+
+export const bookCoworking = async (coworkingId, userId, date, startTime, endTime) => {
+    try {
+        const response = await axios.post(`${BASE_URL}/coworking/book`, {
+            coworkingId,
+            userId,
+            date,
+            startTime,
+            endTime
+        });
+        return response.data;
+    } catch (error) {
+        throw error.response.data;
+    }
+};
+
+// Функция для отмены бронирования коворкинга
+export const cancelBooking = async (bookingId) => {
+    try {
+        const response = await axios.delete(`${BASE_URL}/coworking/cancel/${bookingId}`);
+        return response.data;
+    } catch (error) {
+        throw error.response.data;
+    }
+};
+
+// Получение всех записей пользователя
+export const getUserBookings = async (userId) => {
+    try {
+        const response = await axios.get(`${BASE_URL}/coworking/user/${userId}`);
+        return response.data;
+    } catch (error) {
+        throw error.response.data;
+    }
+};
