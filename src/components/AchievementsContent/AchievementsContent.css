@@ -1,0 +1,26 @@
+.achievements-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.achievements-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.achievement-item {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1 0 300px;
+}
+
+.achievement-details h3 {
+    margin-top: 0;
+}
+
+.achievement-details p {
+    margin-bottom: 0;
+}

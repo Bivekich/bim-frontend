@@ -24,6 +24,7 @@ function App() {
       <div className="App">
           {isLoggedIn ? (
               <UserPanel onLogout={handleLogout}/>
+
           ) : (
               <>
                   {isRegistering ? (

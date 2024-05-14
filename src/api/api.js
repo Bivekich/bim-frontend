@@ -145,3 +145,33 @@ export const getUserBookings = async (userId) => {
         throw error.response.data;
     }
 };
+
+// Получение списка новостей
+export const getNews = async () => {
+    try {
+        const response = await axios.get(`${BASE_URL}/news`);
+        return response.data;
+    } catch (error) {
+        throw error.response.data.message;
+    }
+};
+
+// Создание новости
+export const createNews = async (title, content) => {
+    try {
+        const response = await axios.post(`${BASE_URL}/news`, { title, content });
+        return response.data;
+    } catch (error) {
+        throw error.response.data;
+    }
+};
+
+// Удаление новости по её ID
+export const deleteNews = async (newsId) => {
+    try {
+        const response = await axios.delete(`${BASE_URL}/news/${newsId}`);
+        return response.data;
+    } catch (error) {
+        throw error.response.data;
+    }
+};
